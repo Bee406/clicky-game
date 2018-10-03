@@ -1,9 +1,9 @@
 import React from "react";
-import "./Card.css";
+import "./Puppy.css";
 
-const Card = props => (
+const Puppy = props => (
 
-    <div className="card">
+    <div className="card" onClick={()=>props.puppyClick(props.id)}>
       <div className="img-container">
         <img alt={props.name} src={props.image} />
       </div>
@@ -11,4 +11,4 @@ const Card = props => (
 
 );
 
-export default Card;
+export default Puppy;
